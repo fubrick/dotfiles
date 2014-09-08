@@ -20,7 +20,7 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 syntax enable
-set background=dark
-"set background=light
+"set background=dark
+set background=light
 colorscheme solarized
 
