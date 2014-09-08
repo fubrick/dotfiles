@@ -13,6 +13,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'ctrlp.vim'
 Plugin 'Syntastic'
 Plugin 'Solarized'
+Plugin 'racket.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
