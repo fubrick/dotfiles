@@ -1,4 +1,5 @@
 set nocompatible              " be iMproved, required
+set ruler
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -11,7 +12,14 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'ctrlp.vim'
 Plugin 'Syntastic'
+Plugin 'Solarized'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+syntax enable
+set background=dark
+"set background=light
+colorscheme solarized
+
