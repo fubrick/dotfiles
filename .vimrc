@@ -12,15 +12,18 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'ctrlp.vim'
 Plugin 'Syntastic'
-Plugin 'Solarized'
 Plugin 'racket.vim'
+Plugin 'AutumnLeaf'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 syntax enable
-set background=dark
-"set background=light
-colorscheme solarized
 
+"adding AutumnLeaf for gui only
+if has('gui_running')
+	colorscheme AutumnLeaf
+endif
+
+set number
