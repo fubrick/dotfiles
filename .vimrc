@@ -27,3 +27,7 @@ if has('gui_running')
 endif
 
 set number
+set mouse=a
+map <ScrollWheelUp> <C-Y>
+map <ScrollWheelDown> <C-E>
+set showcmd
