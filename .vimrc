@@ -26,8 +26,11 @@ if has('gui_running')
 	colorscheme AutumnLeaf
 endif
 
+" allow for mouse scrolling while using vim from cmd/bash
 set number
 set mouse=a
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
+
+" shows incomplete command entered in lower right corner
 set showcmd
