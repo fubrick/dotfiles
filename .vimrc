@@ -33,4 +33,4 @@ map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
 
 " shows incomplete command entered in lower right corner
-set showcmd
+"set showcmd
