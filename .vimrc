@@ -14,6 +14,8 @@ Plugin 'ctrlp.vim'
 Plugin 'Syntastic'
 Plugin 'racket.vim'
 Plugin 'AutumnLeaf'
+Plugin 'Solarized'
+Plugin 'snipMate'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -21,10 +23,14 @@ filetype plugin indent on    " required
 
 syntax enable
 
-"adding AutumnLeaf for gui only
+"adding Light setting for gui only
 if has('gui_running')
-	colorscheme AutumnLeaf
+	set background=dark
+	colorscheme solarized
 endif
+
+" associate *.foo with php filetype
+au BufRead,BufNewFile *.sqc setfiletype c
 
 " allow for mouse scrolling while using vim from cmd/bash
 set number
