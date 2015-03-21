@@ -27,10 +27,14 @@ syntax enable
 if has('gui_running')
 	set background=dark
 	colorscheme solarized
+	let g:solarized_termtrans=1
 endif
 
 " associate *.foo with php filetype
 au BufRead,BufNewFile *.sqc setfiletype c
+
+" dont let vim mangle in incoming pasted text by adding a bazillion tabs
+set paste
 
 " allow for mouse scrolling while using vim from cmd/bash
 set number
